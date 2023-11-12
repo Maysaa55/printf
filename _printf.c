@@ -1,11 +1,11 @@
 #include "main.h"
 int _printf(const char *format, ...)
 {
- va_list ptr;
- va_start(ptr, format);
  int counter ;
  counter = 0;
  char specifier;
+ va_list ptr;
+ va_start(ptr, format);
  if (format != NULL)
  {
   while (*format)

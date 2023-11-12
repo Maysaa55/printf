@@ -7,7 +7,7 @@
  * Return - the number of printed characters 
  */
 
-int write_char(char str)
+int write_char(int str)
 {
         write(1, &str, 1);
         return (1);

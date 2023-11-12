@@ -3,8 +3,8 @@ int _printf(const char *format, ...)
 {
  int counter ;
  char specifier;
- counter = 0;
  va_list ptr;
+ counter = 0 ;
  va_start(ptr, format);
  if (format != NULL)
  {

@@ -2,6 +2,7 @@
 /**
  * write_string - print a string
  * @str : string pointer
+ *
  * Return: string length
  */
 int write_string(char  *str)
@@ -11,5 +12,6 @@ int write_string(char  *str)
 	write(1, str, strlen(str));
 	return (strlen(str));
 	}
+	return (0) ;
 }
 

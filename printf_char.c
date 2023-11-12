@@ -6,9 +6,10 @@
  *
  * Return - the number of printed characters 
  */
+
 int write_char(char str)
 {
- write(1, &str , 1);
- return (1);
+        write(1, &str, 1);
+        return (1);
 }
 

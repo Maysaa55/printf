@@ -2,8 +2,8 @@
 int _printf(const char *format, ...)
 {
  int counter ;
- counter = 0;
  char specifier;
+ counter = 0;
  va_list ptr;
  va_start(ptr, format);
  if (format != NULL)

@@ -12,3 +12,4 @@ int write_string(char  *str)
 	return (strlen(str));
 	}
 }
+

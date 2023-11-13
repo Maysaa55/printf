@@ -8,7 +8,7 @@
  * Return - nothing
  */
 
-void to_string(char str[],int num)
+void to_string(char *str,int num)
 {
 	int i, tmp, length, n;
 	

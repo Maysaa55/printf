@@ -1,8 +1,8 @@
 # include "main.h"
 
 /**
-* write_rot13  - prints reversed string .
-* @str: the string to reverse
+* write_rot13  - prints rot13ed string .
+* @str: the string to cinvert
 *
 * Return: the number of printed characters .
 */

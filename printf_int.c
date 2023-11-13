@@ -33,12 +33,12 @@ void to_string(char str[],int num)
 	}
 	str[length] = '\0';
 }
-void write_int(int_num)
+void write_int(int num)
 {
 	char *str;
 	char negative;
 	negative = '-';
-	str =(char *) mallov(20 *sizeof(char));
+	str =(char*) malloc(20 *sizeof(char));
 	to_string(str ,num);
 	if (num < 0)
 		write(1, &negative, 1);

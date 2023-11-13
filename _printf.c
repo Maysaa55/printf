@@ -14,7 +14,8 @@ int _printf(const char *format, ...)
    {
     if (*format == '\\'){
 	    if(*(format+1) == 'n')
-	write_char('\n');}
+	write_char('\n');
+    counter -- ;}
     else {
     write(1, &(*format), 1);
     counter += 1;

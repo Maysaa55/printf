@@ -28,14 +28,15 @@ void to_string(char *str,int num)
 		length++;
 		n /= 10;
 	}
+	str += (length-1);
 	for (i = 0; i < length; i++)
 	{
 		tmp = num % 10;
 		num = num / 10;
 
-		str[length - (i + 1)] = tmp + '0';
+		*(str-i) = tmp + '0';
 	}
-	str[length] = '\0';
+	*(str+length) = '\0';
 }
 
 /**

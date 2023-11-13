@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * to_string - print string
+ * to_string - convert integer to string
  * @str  : string
- * @num : unsghed number
+ * @num : unsigned number
+ *
+ * Return - nothing
  */
 
 void to_string(char str[],int num)
@@ -33,6 +35,12 @@ void to_string(char str[],int num)
 	}
 	str[length] = '\0';
 }
+/**
+ * write_int  - prints an integer .
+ * @num: the number to print
+ *
+ * Return - nothing .
+ */
 void write_int(int num)
 {
 	char *str;

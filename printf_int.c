@@ -7,7 +7,12 @@
  *
  * Return - nothing
  */
+<<<<<<< HEAD
 void to_string(char str[], int num)
+=======
+
+void to_string(char *str,int num)
+>>>>>>> b45d194186ea78e913b71ebb99d435e978e93c21
 {
 	int i, tmp, length, n;
 

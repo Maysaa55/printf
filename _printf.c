@@ -1,4 +1,10 @@
 #include "main.h" 
+ /**
+ * _printf  - custom printf function.
+ * @format: the format string
+ *
+ * Return: the number of printed characters .
+ */
 int _printf(const char *format, ...)
 {
  int counter;
@@ -42,7 +48,7 @@ int _printf(const char *format, ...)
     else if(specifier == 'r')
 	counter += write_reverse(va_arg(ptr, char*));
     else if(specifier == 'R')
-	counter += write_reverse(va_arg(ptr, char*));
+	counter += write_rot13(va_arg(ptr, char*));
     else
      write(1, &specifier, 1);
    }

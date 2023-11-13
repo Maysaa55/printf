@@ -16,7 +16,7 @@ void write_binary(unsigned int num);
 int write_reverse(char *str);
 int write_rot13(char *str);
 void write_decimal(int num);
-void to_string(char str[], int num);
+void to_string(char *str, int num);
 
 #endif
 

@@ -37,6 +37,8 @@ int _printf(const char *format, ...)
      counter += write_string(va_arg(ptr, char *));
     else if (specifier == 'c')
      counter += write_char(va_arg(ptr, int));
+    else if(specifier == 'i' || specifier == 'd')
+     counter += write_int(va_arg(ptr, int));
     else
      write(1, &specifier, 1);
    }

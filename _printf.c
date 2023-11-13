@@ -12,8 +12,12 @@ int _printf(const char *format, ...)
   {
    if (*format != '%')
    {
+    if (*format == '\' && *(format + 1) == 'n')
+	write_char('\n');
+    else {
     write(1, &(*format), 1);
     counter += 1;
+    }
    }
    else
    {

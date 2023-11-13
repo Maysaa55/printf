@@ -9,7 +9,7 @@ int write_reverse(char *str)
 {
 int i ;
 if (str != NULL){
-for (i =strlen(str)-1; i>= 0 ;i++)
+for (i =strlen(str)-1; i>= 0 ;i--)
 {
 write(1, &str[i] , 1);
 }

@@ -1,10 +1,10 @@
 #include "main.h" 
 int _printf(const char *format, ...)
 {
- int counter ;
+ int counter;
  char specifier;
  va_list ptr;
- counter = 0 ;
+ counter = 0;
  va_start(ptr, format);
  if (format != NULL)
  {
@@ -12,13 +12,17 @@ int _printf(const char *format, ...)
   {
    if (*format != '%')
    {
-    if (*format == '\\'){
-	    if(*(format+1) == 'n')
-	write_char('\n');
-    counter -- ;}
-    else {
-    write(1, &(*format), 1);
-    counter += 1;
+    if (*format == '\\')
+    {
+     if (*(format + 1) == 'n')
+     {
+      write_char('\n');
+     }
+    }
+    else
+    {
+     write(1, &(*format), 1);
+     counter += 1;
     }
    }
    else
@@ -29,12 +33,12 @@ int _printf(const char *format, ...)
      write(1, &specifier, 1);
      counter += 1;
     }
-    if (specifier == 's')
-    counter += write_string(va_arg(ptr, char *));
-    if (specifier == 'c')
+    else if (specifier == 's')
+     counter += write_string(va_arg(ptr, char *));
+    else if (specifier == 'c')
      counter += write_char(va_arg(ptr, int));
     else
-      return (-1);
+     write(1, &specifier, 1);
    }
    format++;
   }

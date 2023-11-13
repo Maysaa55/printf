@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
   {
    if (*format != '%')
    {
-    if (*format == '\'){
+    if (*format == '\\'){
 	    if(*(format+1) == 'n')
 	write_char('\n');}
     else {

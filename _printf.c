@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
     if (specifier == 'c')
      counter += write_char(va_arg(ptr, int));
     else
-     return -1;
+     return (0);
    }
    format++;
   }

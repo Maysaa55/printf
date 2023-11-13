@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h" 
 int _printf(const char *format, ...)
 {
  int counter ;
@@ -28,8 +28,9 @@ int _printf(const char *format, ...)
     if (specifier == 'c')
      counter += write_char(va_arg(ptr, int));
     else{
-     return (-1);
+     
      write_char(va_arg(ptr,int));
+      return (-1);}
    }
    format++;
   }

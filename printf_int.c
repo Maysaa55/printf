@@ -12,7 +12,7 @@ void to_string(char str[],int num)
 {
 	int i, tmp, length, n;
 	
-	lenght = 0;
+	length = 0;
 	if(num < 0) 
 	{
 		n=(-1) *(num);

@@ -1,4 +1,10 @@
 #include "main.h" 
+ /**
+ * _printf  - custom printf function.
+ * @format: the format string
+ *
+ * Return: the number of printed characters .
+ */
 int _printf(const char *format, ...)
 {
  int counter;

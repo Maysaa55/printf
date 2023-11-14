@@ -19,4 +19,5 @@ int  write_double(int num);
 void to_string(char *str, int num);
 int _pow(int x, int y);
 int write_octal(int num);
+int write_unsigned(int num);
 #endif

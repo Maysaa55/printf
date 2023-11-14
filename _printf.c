@@ -56,12 +56,14 @@ int _printf(const char *format, ...)
 							counter += write_rot13(va_arg(ptr, char*));
 						else if (specifier == 'd')
 							counter += write_int(va_arg(ptr, int));
-						else if (specifier == 'i' || specifier== 'u')
+						else if (specifier == 'i' )
 							counter += write_int(va_arg(ptr, int));
 						else if (specifier == 'b')
 							counter += write_binary(va_arg(ptr, int));
 						else if (specifier == 'o')
 							counter += write_octal(va_arg(ptr, int));
+						 else if (specifier == 'u' )
+                                                        counter += write_unsigned(va_arg(ptr, int));
 						else
 							write(1, &specifier, 1);
 					}

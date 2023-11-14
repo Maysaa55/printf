@@ -5,7 +5,7 @@
  *
  * Return: the number of printed characters .
  */
-int write_binary( int num){
+int write_binary(unsigned int num){
 int counter ;
 int length,n,i;
 char *str;

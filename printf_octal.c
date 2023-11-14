@@ -5,8 +5,7 @@
  *
  * Return: the number of printed characters .
  */
-int write_octal(int num)
-	{
+int write_octal(int num){
  int count;
  int length, n, i;
  char *str;
@@ -80,6 +79,6 @@ int write_octal(int num)
   free(str);
   return (count);
  }
-  return (0);
+ return(0);
 }
 

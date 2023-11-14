@@ -17,6 +17,7 @@ int write_octal(int num)
  {
   write_char(48);
   count += 1;
+  return (1);
  }
 
  else if (num > 0)

@@ -12,7 +12,7 @@ int write_int(int num)
 	int count;
 
 	int length;
-	int n, i, num2;
+	int n, i;
 	int num1;
 	char negative;
 	negative = '-';

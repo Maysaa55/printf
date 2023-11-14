@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
 							write(1, &specifier, 1);
 							counter += 1;
 						}
-						else if (specifier == 's')
+						else if (specifier == 's' || specifier == 'S')
 							counter += write_string(va_arg(ptr, char *));
 						else if (specifier == 'c')
 							counter += write_char(va_arg(ptr, int));
@@ -56,7 +56,7 @@ int _printf(const char *format, ...)
 							counter += write_rot13(va_arg(ptr, char*));
 						else if (specifier == 'd')
 							counter += write_int(va_arg(ptr, int));
-						else if (specifier == 'i')
+						else if (specifier == 'i' || specifier== 'u')
 							counter += write_int(va_arg(ptr, int));
 						else if (specifier == 'b')
 							counter += write_binary(va_arg(ptr, int));

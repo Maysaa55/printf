@@ -18,5 +18,5 @@ int write_rot13(char *str);
 int  write_double(int num);
 void to_string(char *str, int num);
 int _pow(int x, int y);
-
+int write_octal(int num);
 #endif

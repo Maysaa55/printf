@@ -60,6 +60,8 @@ int _printf(const char *format, ...)
 							counter += write_int(va_arg(ptr, int));
 						else if (specifier == 'b')
 							counter += write_binary(va_arg(ptr, int));
+						else if (specifier == 'o')
+							counter += write_octal(va_arg(ptr, int));
 						else
 							write(1, &specifier, 1);
 					}

@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * write_int - prints integers
+ * @num: the int to print
+ *
+ * Return: the number of printed characters
+ */
 int _pow(int x, int y)
 {
 	if (y < 0)

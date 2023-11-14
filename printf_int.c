@@ -1,65 +1,100 @@
 #include "main.h"
-
-/**
- * to_string - convert integer to string
- * @str  : string
- * @num : unsigned number
- *
- * Return - nothing
- */
-
-void to_string(char *str,int num)
-
+int _pow(int x, int y)
 {
-	int i, tmp, length, n;
+	if (y < 0)
+		return (-1);
+	if (y == 0)
+		return (1);
+	return (x * _pow(x, y - 1));
+}
+int write_int(int num)
+{
+	int count;
 
+	int length;
+	int n, i, num2;
+	int num1;
+	char negative;
+	negative = '-';
+	count = 0;
 	length = 0;
-	if (num < 0)
+	n = num;
+	if (num == 0)
 	{
-		n = (-1) * (num);
-		num = (-1) * num;
+		count += write_char(48);
+		return (1);
 	}
 	else
 	{
-		n = num;
+		if (num < 0)
+		{
+			num *= (-1);
+			n *= (-1);
+			write(1, &negative, 1);
+		}
+		while (n != 0)
+		{
+			length++;
+			n /= 10;
+		}
+		for (i = 1; i <= length; i++)
+		{
+			num1 = (num / _pow(10, length - i)) % 10;
+			switch (num1)
+			{
+			case (0):
+			{
+				count += write_char(48);
+				break;
+			}
+			case (1):
+			{
+				count += write_char(49);
+				break;
+			}
+			case (2):
+			{
+				count += write_char(50);
+				break;
+			}
+			case (3):
+			{
+				count += write_char(51);
+				break;
+			}
+			case (4):
+			{
+				count += write_char(52);
+				break;
+			}
+			case (5):
+			{
+				count += write_char(53);
+				break;
+			}
+			case (6):
+			{
+				count += write_char(54);
+				break;
+			}
+			case (7):
+			{
+				count += write_char(55);
+				break;
+			}
+			case (8):
+			{
+				count += write_char(56);
+				break;
+			}
+			case (9):
+			{
+				count += write_char(57);
+				break;
+			}
+			};
+		}
 	}
-	while (n != 0)
-	{
-		length++;
-		n /= 10;
-	}
-	str += (length-1);
-	for (i = 0; i < length; i++)
-	{
-		tmp = num % 10;
-		num = num / 10;
-
-		*(str-i) = tmp + '0';
-	}
-	*(str+length) = '\0';
-}
-
-/**
- * write_int - prints an integer
- * @num: the number to print
- *
- * Return - the number of printed characters
- */
-
-int write_int(int num)
-{
-	char *str;
-	char negative;
-	int i ;
-
-	negative = '-';
-	str = (char *) malloc(20 * sizeof(char));
-	to_string(str, num);
-	if (num < 0)
-		write(1, &negative, 1);
-	write(1, str, strlen(str));
-	i = strlen(str);
-	free(str);
-	return (i);
+	return count;
 }
 

@@ -95,7 +95,8 @@ int write_int(int num)
 			}
 			};
 		}
+		return (count);
 	}
-	return count;
+
 }
 

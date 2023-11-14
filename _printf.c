@@ -21,9 +21,10 @@ int _printf(const char *format, ...)
     if (*format == '\\')
     {
      if (*(format + 1) == 'n')
-	     counter += 1;
+	   
      {
       write_char('\n');
+      counter += 1 ;
      }
     }
     else
@@ -49,7 +50,9 @@ int _printf(const char *format, ...)
     else if(specifier == 'R')
 	counter += write_rot13(va_arg(ptr, char*));
     else if(specifier == 'd')
-	    write_double(va_arg(ptr,int));
+	    counter += write_double(va_arg(ptr,int));
+    else if (specifier == 'i')
+	    counter += write_int(va_arg(ptr,int));
     else
      write(1, &specifier, 1);
    }

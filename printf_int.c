@@ -43,13 +43,14 @@ void to_string(char *str,int num)
  * write_int - prints an integer
  * @num: the number to print
  *
- * Return - nothing
+ * Return - the number of printed characters
  */
 
-void write_int(int num)
+int write_int(int num)
 {
 	char *str;
 	char negative;
+	int i ;
 
 	negative = '-';
 	str = (char *) malloc(20 * sizeof(char));
@@ -57,6 +58,8 @@ void write_int(int num)
 	if (num < 0)
 		write(1, &negative, 1);
 	write(1, str, strlen(str));
+	i = strlen(str);
 	free(str);
+	return (i);
 }
 

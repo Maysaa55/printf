@@ -12,6 +12,6 @@ int write_string(char  *str)
 	write(1, str, strlen(str));
 	return (strlen(str));
 	}
-	return (0) ;
+	return (0);
 }
 

@@ -38,55 +38,35 @@ int write_unsigned(int num)
       switch (num1)
       {
       case (0):
-      {
-        count += write_char(48);
-        break;
-      }
+      {count += write_char(48);
+        break;}
       case (1):
-      {
-        count += write_char(49);
-        break;
-      }
+      {count += write_char(49);
+        break;}
       case (2):
-      {
-        count += write_char(50);
-        break;
-      }
+      {count += write_char(50);
+        break;}
       case (3):
-      {
-        count += write_char(51);
-        break;
-      }
+      {count += write_char(51);
+        break;}
       case (4):
-      {
-        count += write_char(52);
-        break;
-      }
+      {count += write_char(52);
+        break;}
       case (5):
-      {
-        count += write_char(53);
-        break;
-      }
+      {count += write_char(53);
+        break;}
       case (6):
-      {
-        count += write_char(54);
-        break;
-      }
+      {count += write_char(54);
+        break;}
       case (7):
-      {
-        count += write_char(55);
-        break;
-      }
+      {count += write_char(55);
+        break;}
       case (8):
-      {
-        count += write_char(56);
-        break;
-      }
+      {count += write_char(56);
+        break;}
       case (9):
-      {
-        count += write_char(57);
-        break;
-      }
+      {count += write_char(57);
+        break;}
       };
     }
     return (count);

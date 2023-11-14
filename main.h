@@ -20,4 +20,3 @@ void to_string(char *str, int num);
 int _pow(int x, int y);
 
 #endif
-

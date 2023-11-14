@@ -19,3 +19,4 @@ return (strlen(str));
 else 
 return (0);
 }
+

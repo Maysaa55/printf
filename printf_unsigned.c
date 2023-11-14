@@ -63,10 +63,10 @@ int write_unsigned(int num)
         break;
       }
       case (5):
-      {
-        count += write_char(53);
-        break;
-      }
+      {
+        count += write_char(53);
+        break;
+      }
       case (6):
       {
         count += write_char(54);

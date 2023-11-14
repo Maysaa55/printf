@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * printf_char - write a character to std output
- * @str: the character to print 
+ *write_char - write a character to std output
+ *@str: the character to print
  *
- * Return - the number of printed characters 
+ * Return:  1
  */
 
 int write_char(int str)
 {
-        write(1, &str, 1);
-        return (1);
+	write(1, &str, 1);
+	return (1);
 }
 

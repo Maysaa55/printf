@@ -7,15 +7,15 @@
  */
 int write_binary( int num){
 int counter ;
-int length ,n , size,i;
+int length,n,i;
+char *str;
 n = num;
-char* str;
 
 counter = 0;
 length = 0;
 if (num == 0){
 write_char(48);
-counter += 1;
+return (1);
 }
 
 else if (num >0){

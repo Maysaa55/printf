@@ -21,7 +21,7 @@ int write_int(int num)
 	n = num;
 	if (num == 0)
 	{
-		count += write_char(48);
+		write_char(48);
 		return (1);
 	}
 	else
@@ -31,7 +31,7 @@ int write_int(int num)
 			num *= (-1);
 			n *= (-1);
 			write(1, &negative, 1);
-			counter += 1;
+			count += 1;
 		}
 		while (n != 0)
 		{

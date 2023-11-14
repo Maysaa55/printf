@@ -8,8 +8,8 @@
 int write_double(int num){
 char *str;
 int i, temp;
-temp = num;
 char negative;
+temp = num;
 negative = '-';
 str = (char*)malloc(sizeof(char)*20);
 to_string(str,num);

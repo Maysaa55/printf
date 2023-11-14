@@ -80,7 +80,6 @@ int write_octal(int num)
   free(str);
   return (count);
  }
- else
   return (0);
 }
 

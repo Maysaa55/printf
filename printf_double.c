@@ -24,7 +24,6 @@ i += 1;
 else{
 write(1,str,strlen(str));
 write(1,str,strlen(str));
-i = strlen(str);
 }
 free(str);
 return (2*i);

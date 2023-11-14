@@ -19,7 +19,7 @@ int write_rot13(char *str)
 			letter = *str;
 			if ((letter >= 'A' && letter <= 'M') || (letter >= 'a' && letter <= 'm'))
 				letter += 13;
-			if ((letter >= 'N' && letter <= 'Z') || (letter >= 'n' && letter <= 'z'))
+			else if ((letter >= 'N' && letter <= 'Z') || (letter >= 'n' && letter <= 'z'))
 				letter -= 13;
 
 			write(1, &letter, 1);

@@ -50,7 +50,7 @@ int _printf(const char *format, ...)
     else if(specifier == 'R')
 	counter += write_rot13(va_arg(ptr, char*));
     else if(specifier == 'd')
-	    counter += write_double(va_arg(ptr,int));
+	    counter += write_int(va_arg(ptr,int));
     else if (specifier == 'i')
 	    counter += write_int(va_arg(ptr,int));
     else
